@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Built an AI pipeline that edits and publishes videos automatically. Here's how.">
+    <title>AI Video Pipeline - Samir Mohamed</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        .blog-post { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
+        .blog-post h1 { margin-bottom: 16px; }
+        .blog-meta { color: var(--text-muted); margin-bottom: 40px; }
+        .blog-content p { margin-bottom: 20px; line-height: 1.8; }
+        .blog-content h2 { margin-top: 40px; margin-bottom: 16px; }
+        .blog-content ul { margin: 20px 0; padding-left: 24px; }
+        .blog-content li { margin-bottom: 10px; list-style: disc; }
+        .blog-content code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="../../index.html" class="logo"><span class="logo-text">samirmohamed.com</span></a>
+            <div class="nav-links">
+                <a href="../../index.html#about">About</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <h1>Video Published in 3 Minutes. AI Did the Work.</h1>
+            <p class="blog-meta">Mar 30, 2026 · 3 min read</p>
+            
+            <div class="blog-content">
+                <p>Recording a talk is easy. Editing it is painful. So I automated most of it.</p>
+                
+                <h2>What It Does</h2>
+                <p>Drop a raw recording into a folder. Wait a few minutes. Get back:</p>
+                <ul>
+                    <li>Trimmed video (cuts the "is this thing on?" parts)</li>
+                    <li>Auto-generated captions</li>
+                    <li>Thumbnail with title</li>
+                    <li>Description and tags</li>
+                </ul>
+                
+                <p>Then it uploads to YouTube. Draft mode, so I can review before publishing.</p>
+                
+                <h2>The Tech</h2>
+                <p>Whisper for transcription. FFmpeg for video processing. Claude for generating titles and descriptions. YouTube API for upload.</p>
+                
+                <p>All glued together with Python. Nothing fancy.</p>
+                
+                <h2>The Interesting Part</h2>
+                <p>Detecting where to cut. Turns out silence detection + transcript analysis works pretty well.</p>
+                
+                <p>If there's 5 seconds of silence followed by "okay so let's get started," that's probably the real beginning.</p>
+                
+                <h2>What It Can't Do</h2>
+                <p>Complex edits. Picture-in-picture. Fancy transitions. For that you still need a human.</p>
+                
+                <p>But for simple "here's my talk recording" videos? Good enough.</p>
+                
+                <h2>Time Saved</h2>
+                <p>Before: 2-3 hours per video.</p>
+                <p>After: 10 minutes of review and minor tweaks.</p>
+                
+                <p>That's dozens of hours per year I don't have to spend on video editing.</p>
+            </div>
+            
+            <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border-light);">
+                <a href="../blog.html">&larr; Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo"><span class="logo-text">samirmohamed.com</span></div>
+            <div class="footer-links">
+                <a href="../privacy.html">Data privacy</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../../index.html#contact">Contact</a>
+            </div>
+            <div class="footer-right"><span class="copyright">&copy; 2026 Samir Mohamed</span></div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How I automated turning meeting transcripts into presentation slides using AI.">
+    <title>Transcript to Slides in 20 Minutes - Samir Mohamed</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        .blog-post { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
+        .blog-post h1 { margin-bottom: 16px; }
+        .blog-meta { color: var(--text-muted); margin-bottom: 40px; }
+        .blog-content p { margin-bottom: 20px; line-height: 1.8; }
+        .blog-content h2 { margin-top: 40px; margin-bottom: 16px; }
+        .blog-content ul { margin: 20px 0; padding-left: 24px; }
+        .blog-content li { margin-bottom: 10px; list-style: disc; }
+        .blog-content code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="../../index.html" class="logo"><span class="logo-text">samirmohamed.com</span></a>
+            <div class="nav-links">
+                <a href="../../index.html#about">About</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <h1>Transcript to Slides in 20 Minutes</h1>
+            <p class="blog-meta">May 05, 2026 · 2 min read</p>
+            
+            <div class="blog-content">
+                <p>Had a 2-hour workshop recording. Needed slides for a talk. Didn't want to spend my weekend on it.</p>
+                
+                <p>So I automated it.</p>
+                
+                <h2>The Setup</h2>
+                <p>Whisper for transcription. Claude for summarizing and structuring. Python script to generate the markdown. Marp to turn it into actual slides.</p>
+                
+                <p>Total time from recording to finished deck: about 20 minutes. Most of that was the transcription.</p>
+                
+                <h2>What Actually Worked</h2>
+                <p>The trick is giving Claude good instructions. Tell it exactly what format you want. How many slides. What to emphasize.</p>
+                
+                <p>Don't ask it to "make slides." Ask it to "extract 8-10 key points, each with a headline and 2-3 bullet points, suitable for a technical audience."</p>
+                
+                <h2>What Didn't Work</h2>
+                <p>First attempt was garbage. Claude tried to include everything. 47 slides from a 2-hour workshop. Nobody wants that.</p>
+                
+                <p>Had to add constraints. "Maximum 12 slides. Skip the introductions. Focus on actionable takeaways."</p>
+                
+                <h2>The Result</h2>
+                <p>Good enough to present. Not perfect, but 80% there. The remaining 20% took maybe 30 minutes of manual tweaking.</p>
+                
+                <p>Compare that to 4-6 hours of watching the recording and writing slides from scratch.</p>
+                
+                <p>Worth it? Yeah.</p>
+            </div>
+            
+            <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border-light);">
+                <a href="../blog.html">&larr; Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo"><span class="logo-text">samirmohamed.com</span></div>
+            <div class="footer-links">
+                <a href="../privacy.html">Data privacy</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../../index.html#contact">Contact</a>
+            </div>
+            <div class="footer-right"><span class="copyright">&copy; 2026 Samir Mohamed</span></div>
+        </div>
+    </footer>
+</body>
+</html>

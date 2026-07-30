@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#f0fdf4"/>
+  <!-- Book/Wiki icon -->
+  <rect x="60" y="30" width="80" height="60" rx="4" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <path d="M100 30v60" stroke="#2D9D5F" stroke-width="2"/>
+  <path d="M70 42h20M70 52h18M70 62h16" stroke="#2D9D5F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M110 42h20M110 52h18M110 62h16" stroke="#2D9D5F" stroke-width="2" stroke-linecap="round"/>
+  <!-- AI nodes -->
+  <circle cx="45" cy="35" r="8" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <circle cx="155" cy="35" r="8" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <circle cx="45" cy="85" r="8" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <circle cx="155" cy="85" r="8" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <path d="M53 35h7M140 35h7M53 85h7M140 85h7" stroke="#2D9D5F" stroke-width="1.5" stroke-dasharray="3 2"/>
+</svg>

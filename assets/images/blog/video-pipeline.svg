@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" fill="#f0fdf4"/>
+  <!-- Video file input -->
+  <rect x="20" y="40" width="35" height="40" rx="3" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <path d="M30 55l10 6-10 6z" fill="#2D9D5F"/>
+  <!-- Pipeline arrows -->
+  <path d="M60 60h20" stroke="#2D9D5F" stroke-width="2"/>
+  <path d="M75 53l8 7-8 7" stroke="#2D9D5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- AI processing box -->
+  <rect x="85" y="35" width="40" height="50" rx="3" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <circle cx="105" cy="50" r="8" stroke="#2D9D5F" stroke-width="2"/>
+  <circle cx="105" cy="50" r="3" fill="#2D9D5F"/>
+  <path d="M92 68h26M92 75h20" stroke="#2D9D5F" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Arrow out -->
+  <path d="M130 60h20" stroke="#2D9D5F" stroke-width="2"/>
+  <path d="M145 53l8 7-8 7" stroke="#2D9D5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- YouTube output -->
+  <rect x="155" y="40" width="35" height="40" rx="3" stroke="#2D9D5F" stroke-width="2" fill="white"/>
+  <rect x="160" y="48" width="25" height="16" rx="4" fill="#2D9D5F" opacity="0.2"/>
+  <path d="M170 56l8 4-8 4z" fill="#2D9D5F"/>
+  <path d="M162 70h18" stroke="#2D9D5F" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Checkmark -->
+  <circle cx="172" cy="45" r="6" fill="#2D9D5F"/>
+  <path d="M169 45l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

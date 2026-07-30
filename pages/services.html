@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI & Cloud Consulting Services by Samir Mohamed. AI Automation, Cloud Architecture, DevOps, and Platform Engineering.">
+    <title>Services - Samir Mohamed | AI & Cloud Consultant</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .services-hero {
+            padding: 140px 0 60px;
+            background: linear-gradient(135deg, #0d4d4d 0%, #1a5f5f 50%, #2d9d5f 100%);
+            color: white;
+        }
+        .services-hero h1 { margin-bottom: 16px; }
+        .services-hero p { opacity: 0.9; max-width: 700px; }
+        
+        .service-section { padding: 80px 0; }
+        .service-section.alt { background: #f8f9fa; }
+        
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .service-content.reverse .service-text { order: 2; }
+        .service-content.reverse .service-features { order: 1; }
+        
+        .service-text h2 { margin-bottom: 20px; }
+        .service-text p { color: var(--text-muted); margin-bottom: 16px; }
+        
+        .service-features {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .service-features h3 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--primary-green);
+        }
+        .service-features ul { margin: 0; }
+        .service-features li {
+            padding: 12px 0 12px 28px;
+            position: relative;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .service-features li:last-child { border-bottom: none; }
+        .service-features li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 18px;
+            width: 10px;
+            height: 10px;
+            background: var(--primary-green);
+            border-radius: 50%;
+        }
+        
+        .tech-stack {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+        .tech-tag {
+            background: #f0f9f4;
+            color: var(--primary-green);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .service-content {
+                grid-template-columns: 1fr;
+            }
+            .service-content.reverse .service-text { order: 1; }
+            .service-content.reverse .service-features { order: 2; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">samirmohamed.com</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services-hero">
+        <div class="container">
+            <h1>Services</h1>
+            <p>Helping organizations build production-ready AI systems, cloud platforms, and modern software architectures.</p>
+        </div>
+    </section>
+
+
+    <section id="ai" class="service-section">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text">
+                    <h2>AI & Automation</h2>
+                    <p>I build prototypes and solutions that make AI useful - not just impressive demos, but systems that solve real business problems.</p>
+                    <p>From document analysis and intelligent assistants to process automation and decision support, I help you identify where AI creates actual value and build solutions that work in production.</p>
+                    <p>With 12+ years of engineering experience and hands-on work with generative AI and multi-agent systems, I bridge the gap between what AI can do and what your business needs.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Amazon Bedrock</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Multi-Agent Systems</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Document AI</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <h3>What I can help with</h3>
+                    <ul>
+                        <li>AI strategy and use case identification</li>
+                        <li>Prototype development and validation</li>
+                        <li>Document analysis and extraction</li>
+                        <li>Intelligent assistants and chatbots</li>
+                        <li>Process automation with AI</li>
+                        <li>Multi-agent workflow design</li>
+                        <li>Production AI architecture</li>
+                        <li>MLOps and model deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cloud" class="service-section alt">
+        <div class="container">
+            <div class="service-content reverse">
+                <div class="service-text">
+                    <h2>Cloud Architecture & Modernization</h2>
+                    <p>From first migration steps to fully automated environments - I help you design, build, and optimize cloud infrastructure that supports your business goals.</p>
+                    <p>Whether you're moving to the cloud, modernizing legacy systems, or optimizing existing infrastructure, I bring practical experience from projects across startups and enterprises.</p>
+                    <p>I focus on architectures that are scalable, cost-effective, and maintainable - not over-engineered solutions that create technical debt.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Serverless</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <h3>What I can help with</h3>
+                    <ul>
+                        <li>Cloud migration strategy</li>
+                        <li>Architecture design and review</li>
+                        <li>Infrastructure as Code</li>
+                        <li>Kubernetes deployment</li>
+                        <li>Cost optimization</li>
+                        <li>Security and compliance</li>
+                        <li>Performance optimization</li>
+                        <li>Disaster recovery planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="devops" class="service-section">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-text">
+                    <h2>DevOps & Platform Engineering</h2>
+                    <p>I help teams build internal platforms and delivery pipelines that enable faster, more reliable software delivery.</p>
+                    <p>Good DevOps isn't about tools - it's about creating systems and processes that help teams ship with confidence. I focus on practical improvements that reduce friction and increase velocity.</p>
+                    <p>From setting up CI/CD pipelines to designing developer platforms, I help organizations create the infrastructure their teams need to succeed.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">GitLab CI</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">ArgoCD</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Backstage</span>
+                    </div>
+                </div>
+                <div class="service-features">
+                    <h3>What I can help with</h3>
+                    <ul>
+                        <li>CI/CD pipeline design</li>
+                        <li>Developer platform strategy</li>
+                        <li>Monitoring and observability</li>
+                        <li>GitOps implementation</li>
+                        <li>Automation and tooling</li>
+                        <li>Release management</li>
+                        <li>Developer experience improvement</li>
+                        <li>Team enablement and training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's discuss your project</h2>
+            <p>Every project is different. Let's talk about your specific challenges and how I can help.</p>
+            <a href="https://bookings.cloud.microsoft/book/Letstalk1@lindamohamed.com/" class="btn btn-primary" target="_blank" rel="noopener">Get in touch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-text">samirmohamed.com</span>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Data privacy</a>
+                <a href="imprint.html">Imprint</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div class="footer-right">
+                <span class="copyright">&copy; 2026 Samir Mohamed</span>
+                <div class="footer-social">
+                    <a href="https://github.com/mzzavaa" aria-label="GitHub" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

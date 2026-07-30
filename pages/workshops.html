@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI & Cloud Workshops by Samir Mohamed. From discovery to prototype - hands-on workshops that deliver results.">
+    <title>Workshops - Samir Mohamed | AI & Cloud Consultant</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .workshop-hero {
+            padding: 140px 0 60px;
+            background: linear-gradient(135deg, #0d4d4d 0%, #1a5f5f 50%, #2d9d5f 100%);
+            color: white;
+        }
+        .workshop-hero h1 { margin-bottom: 16px; }
+        .workshop-hero p { opacity: 0.9; max-width: 700px; }
+        
+        .workshop-detail {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .workshop-detail:last-child { border-bottom: none; }
+        .workshop-detail.alt { background: #f8f9fa; }
+        
+        .workshop-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .workshop-grid.reverse .workshop-text { order: 2; }
+        .workshop-grid.reverse .workshop-visual { order: 1; }
+        
+        .workshop-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            opacity: 0.3;
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        .workshop-text h2 { margin-bottom: 20px; }
+        .workshop-text p { color: var(--text-muted); margin-bottom: 16px; }
+        .workshop-text ul { margin: 20px 0; }
+        .workshop-text li {
+            padding: 8px 0 8px 24px;
+            position: relative;
+            color: var(--text-muted);
+        }
+        .workshop-text li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: var(--primary-green);
+            border-radius: 50%;
+        }
+        .workshop-meta {
+            display: flex;
+            gap: 30px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-light);
+        }
+        .workshop-meta-item strong {
+            display: block;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+        }
+        .workshop-meta-item span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .workshop-visual {
+            background: linear-gradient(135deg, #1a5f5f 0%, #2d9d5f 100%);
+            border-radius: 16px;
+            padding: 40px;
+            color: white;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .workshop-visual h3 { margin-bottom: 20px; }
+        .workshop-visual ul { margin: 0; }
+        .workshop-visual li {
+            padding: 10px 0;
+            opacity: 0.9;
+            list-style: none;
+        }
+        
+        @media (max-width: 768px) {
+            .workshop-grid { grid-template-columns: 1fr; }
+            .workshop-grid.reverse .workshop-text { order: 1; }
+            .workshop-grid.reverse .workshop-visual { order: 2; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-text">samirmohamed.com</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#about">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="workshop-hero">
+        <div class="container">
+            <h1>Workshops</h1>
+            <p>From early exploration to working prototype. Hands-on workshops designed to create clarity and momentum - without long strategy phases or complexity.</p>
+        </div>
+    </section>
+
+
+    <section id="alignment" class="workshop-detail">
+        <div class="container">
+            <div class="workshop-grid">
+                <div class="workshop-text">
+                    <div class="workshop-number">#0</div>
+                    <h2>Initial Alignment Call</h2>
+                    <p>A free 30-minute conversation to understand where you are today and where you want to go. We'll explore your current challenges, identify potential opportunities, and determine the right starting point.</p>
+                    <ul>
+                        <li>Understand your current situation and goals</li>
+                        <li>Identify quick wins and longer-term opportunities</li>
+                        <li>Determine if and how I can help</li>
+                        <li>Recommend the best next step</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <div class="workshop-meta-item">
+                            <strong>Duration</strong>
+                            <span>30 minutes</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Format</strong>
+                            <span>Video call</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Cost</strong>
+                            <span>Free</span>
+                        </div>
+                    </div>
+                    <a href="https://bookings.cloud.microsoft/book/Letstalk1@lindamohamed.com/" class="btn btn-primary" style="margin-top: 24px;" target="_blank" rel="noopener">Book a call</a>
+                </div>
+                <div class="workshop-visual">
+                    <h3>What we'll discuss</h3>
+                    <ul>
+                        <li>Your current tech landscape</li>
+                        <li>Business challenges and goals</li>
+                        <li>AI and Cloud opportunities</li>
+                        <li>Realistic next steps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="discovery" class="workshop-detail alt">
+        <div class="container">
+            <div class="workshop-grid reverse">
+                <div class="workshop-text">
+                    <div class="workshop-number">#1</div>
+                    <h2>Discovery Workshop</h2>
+                    <p>A focused half-day workshop to map your processes, identify AI and Cloud opportunities, and prioritize use cases based on business value and technical feasibility.</p>
+                    <ul>
+                        <li>Map current processes and pain points</li>
+                        <li>Identify automation and AI opportunities</li>
+                        <li>Evaluate technical feasibility</li>
+                        <li>Prioritize by business impact</li>
+                        <li>Create an actionable roadmap</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <div class="workshop-meta-item">
+                            <strong>Duration</strong>
+                            <span>Half day (4 hours)</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Participants</strong>
+                            <span>3-8 people</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Deliverable</strong>
+                            <span>Prioritized use case list</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="workshop-visual">
+                    <h3>You'll walk away with</h3>
+                    <ul>
+                        <li>Documented process maps</li>
+                        <li>Ranked list of opportunities</li>
+                        <li>Feasibility assessment</li>
+                        <li>Recommended next steps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="prototype" class="workshop-detail">
+        <div class="container">
+            <div class="workshop-grid">
+                <div class="workshop-text">
+                    <div class="workshop-number">#2</div>
+                    <h2>Prototype Workshop</h2>
+                    <p>A full-day hands-on workshop where we design and build a working prototype together. You'll leave with something tangible to show stakeholders and test with real users.</p>
+                    <ul>
+                        <li>Design solution architecture</li>
+                        <li>Build a working prototype</li>
+                        <li>Integrate with your existing systems</li>
+                        <li>Create demo scenarios</li>
+                        <li>Plan stakeholder presentation</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <div class="workshop-meta-item">
+                            <strong>Duration</strong>
+                            <span>Full day (8 hours)</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Participants</strong>
+                            <span>2-5 people</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Deliverable</strong>
+                            <span>Working prototype</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="workshop-visual">
+                    <h3>You'll walk away with</h3>
+                    <ul>
+                        <li>Functional prototype</li>
+                        <li>Technical documentation</li>
+                        <li>Demo script</li>
+                        <li>Implementation roadmap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="validation" class="workshop-detail alt">
+        <div class="container">
+            <div class="workshop-grid reverse">
+                <div class="workshop-text">
+                    <div class="workshop-number">#3</div>
+                    <h2>Validation Workshop</h2>
+                    <p>A multi-day engagement to validate your prototype with real users, gather structured feedback, and create a detailed roadmap for production implementation.</p>
+                    <ul>
+                        <li>Test prototype with real users</li>
+                        <li>Gather and analyze feedback</li>
+                        <li>Identify gaps and improvements</li>
+                        <li>Create production architecture</li>
+                        <li>Define implementation roadmap</li>
+                    </ul>
+                    <div class="workshop-meta">
+                        <div class="workshop-meta-item">
+                            <strong>Duration</strong>
+                            <span>2-3 days</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Participants</strong>
+                            <span>Team + users</span>
+                        </div>
+                        <div class="workshop-meta-item">
+                            <strong>Deliverable</strong>
+                            <span>Production roadmap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="workshop-visual">
+                    <h3>You'll walk away with</h3>
+                    <ul>
+                        <li>User feedback report</li>
+                        <li>Validated requirements</li>
+                        <li>Production architecture</li>
+                        <li>Implementation timeline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to get started?</h2>
+            <p>Book a free alignment call and let's find the right starting point for your team.</p>
+            <a href="https://bookings.cloud.microsoft/book/Letstalk1@lindamohamed.com/" class="btn btn-primary" target="_blank" rel="noopener">Book a call</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-text">samirmohamed.com</span>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Data privacy</a>
+                <a href="imprint.html">Imprint</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div class="footer-right">
+                <span class="copyright">&copy; 2026 Samir Mohamed</span>
+                <div class="footer-social">
+                    <a href="https://github.com/mzzavaa" aria-label="GitHub" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

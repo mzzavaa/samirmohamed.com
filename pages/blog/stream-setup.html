@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Built an open-source streaming setup for tech events. OBS, NDI, and some Python glue.">
+    <title>Open-Source Stream Setup - Samir Mohamed</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <style>
+        .blog-post { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
+        .blog-post h1 { margin-bottom: 16px; }
+        .blog-meta { color: var(--text-muted); margin-bottom: 40px; }
+        .blog-content p { margin-bottom: 20px; line-height: 1.8; }
+        .blog-content h2 { margin-top: 40px; margin-bottom: 16px; }
+        .blog-content ul { margin: 20px 0; padding-left: 24px; }
+        .blog-content li { margin-bottom: 10px; list-style: disc; }
+        .blog-content code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="../../index.html" class="logo"><span class="logo-text">samirmohamed.com</span></a>
+            <div class="nav-links">
+                <a href="../../index.html#about">About</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../../index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <h1>Built a Stream Setup. Open-Sourced It.</h1>
+            <p class="blog-meta">Apr 01, 2026 · 2 min read</p>
+            
+            <div class="blog-content">
+                <p>Community events need streaming. Pro equipment costs a fortune. So I built something cheaper.</p>
+                
+                <h2>The Stack</h2>
+                <ul>
+                    <li>OBS for the actual streaming</li>
+                    <li>NDI for camera feeds over network</li>
+                    <li>Python scripts for scene switching</li>
+                    <li>Some cheap HDMI capture cards</li>
+                </ul>
+                
+                <p>Total cost: maybe €500 in hardware. Rest is free software.</p>
+                
+                <h2>Why Bother</h2>
+                <p>Rented streaming setups cost €2-3k per day. That's insane for a community meetup with 50 people.</p>
+                
+                <p>This setup runs the whole thing with one laptop and some cables.</p>
+                
+                <h2>The Hard Part</h2>
+                <p>Audio. Always audio. Spent more time debugging audio sync than everything else combined.</p>
+                
+                <p>Solution: dedicated audio interface. Don't try to capture audio through HDMI. Just don't.</p>
+                
+                <h2>Using It</h2>
+                <p>Ran it at a few community events now. Works fine. Quality is good enough for YouTube.</p>
+                
+                <p>Not broadcast quality, but nobody cares. People just want to see the slides and hear the speaker.</p>
+                
+                <p>Code's on GitHub if you want it.</p>
+            </div>
+            
+            <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid var(--border-light);">
+                <a href="../blog.html">&larr; Back to Blog</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo"><span class="logo-text">samirmohamed.com</span></div>
+            <div class="footer-links">
+                <a href="../privacy.html">Data privacy</a>
+                <a href="../imprint.html">Imprint</a>
+                <a href="../../index.html#contact">Contact</a>
+            </div>
+            <div class="footer-right"><span class="copyright">&copy; 2026 Samir Mohamed</span></div>
+        </div>
+    </footer>
+</body>
+</html>
