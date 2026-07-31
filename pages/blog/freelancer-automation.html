@@ -28,12 +28,20 @@
         .blog-content ul { margin: 20px 0; padding-left: 24px; }
         .blog-content li { margin-bottom: 10px; list-style: disc; }
         .blog-sidebar { position: sticky; top: 100px; height: fit-content; }
-        .author-card { padding: 24px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 16px; text-align: center; }
-        .author-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
+        .author-card { padding: 24px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .author-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; display: block; }
         .author-card h3 { margin: 0 0 4px 0; font-size: 1.1rem; }
         .author-card .role { margin: 0 0 16px 0; color: var(--text-muted); font-size: 0.9rem; }
         .author-card p { margin: 0 0 20px 0; font-size: 0.9rem; line-height: 1.6; }
         .author-card .btn { width: 100%; justify-content: center; }
+        .sidebar-section { margin-top: 24px; padding: 20px; background: #fff; border-radius: 12px; border: 1px solid var(--border-light); }
+        .sidebar-section h4 { margin: 0 0 12px 0; font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+        .sidebar-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .sidebar-tags a { padding: 6px 12px; background: #f1f5f9; border-radius: 20px; font-size: 0.8rem; color: var(--text-secondary); text-decoration: none; transition: all 0.2s; }
+        .sidebar-tags a:hover { background: var(--primary); color: white; }
+        .sidebar-posts { display: flex; flex-direction: column; gap: 12px; }
+        .sidebar-posts a { display: block; font-size: 0.9rem; color: var(--text-secondary); text-decoration: none; line-height: 1.4; }
+        .sidebar-posts a:hover { color: var(--primary); }
         @media (max-width: 900px) {
             .blog-layout .container { grid-template-columns: 1fr; }
             .blog-sidebar { position: static; margin-top: 40px; }
@@ -122,6 +130,24 @@
                     <p class="role">Cloud Consultant & AI Solutions Architect</p>
                     <p>I help companies build AI solutions that actually work. Let's chat about your project.</p>
                     <a href="https://outlook.office.com/book/SamirMohamedConsulting@lindamohamed.com/" target="_blank" rel="noopener" class="btn btn-primary">Book Intro Call</a>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>Tags</h4>
+                    <div class="sidebar-tags">
+                        <a href="../blog.html">Automation</a>
+                        <a href="../blog.html">Freelancing</a>
+                        <a href="../blog.html">Productivity</a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h4>Other Posts</h4>
+                    <div class="sidebar-posts">
+                        <a href="freelancer-templates.html">Free Templates for Freelancers</a>
+                        <a href="ai-solutions-wiki.html">Built an AI Wiki. Here's Why.</a>
+                        <a href="ai-video-pipeline.html">Video Published in 3 Minutes</a>
+                    </div>
                 </div>
             </aside>
         </div>
