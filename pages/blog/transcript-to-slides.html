@@ -19,14 +19,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <style>
-        .blog-post { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
-        .blog-post h1 { margin-bottom: 16px; }
+        .blog-layout { padding: 140px 0 80px; }
+        .blog-layout .container { display: grid; grid-template-columns: 1fr 300px; gap: 60px; max-width: 1200px; }
+        .blog-main h1 { margin-bottom: 16px; }
         .blog-meta { color: var(--text-muted); margin-bottom: 40px; }
         .blog-content p { margin-bottom: 20px; line-height: 1.8; }
         .blog-content h2 { margin-top: 40px; margin-bottom: 16px; }
         .blog-content ul { margin: 20px 0; padding-left: 24px; }
         .blog-content li { margin-bottom: 10px; list-style: disc; }
         .blog-content code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        .blog-sidebar { position: sticky; top: 100px; height: fit-content; }
+        .author-card { padding: 24px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 16px; text-align: center; }
+        .author-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
+        .author-card h3 { margin: 0 0 4px 0; font-size: 1.1rem; }
+        .author-card .role { margin: 0 0 16px 0; color: var(--text-muted); font-size: 0.9rem; }
+        .author-card p { margin: 0 0 20px 0; font-size: 0.9rem; line-height: 1.6; }
+        .author-card .btn { width: 100%; justify-content: center; }
+        @media (max-width: 900px) {
+            .blog-layout .container { grid-template-columns: 1fr; }
+            .blog-sidebar { position: static; margin-top: 40px; }
+        }
     </style>
 </head>
 <body>
@@ -41,60 +53,61 @@
         </div>
     </nav>
 
-    <article class="blog-post">
+    <article class="blog-layout">
         <div class="container">
-            <h1>Transcript to Slides in 20 Minutes</h1>
-            <p class="blog-meta">May 05, 2026 · 2 min read</p>
-            
-            <div class="blog-content">
-                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 1px solid #86efac; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px;">
-                    <p style="margin: 0; font-weight: 500;">
-                        <span style="margin-right: 8px;">🔗</span>
-                        See all AI solutions I can build: <a href="https://ai-solutions.wiki/solutions/" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">ai-solutions.wiki/solutions</a>
-                    </p>
+            <div class="blog-main">
+                <h1>Transcript to Slides in 20 Minutes</h1>
+                <p class="blog-meta">May 05, 2026 · 2 min read</p>
+                
+                <div class="blog-content">
+                    <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 1px solid #86efac; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px;">
+                        <p style="margin: 0; font-weight: 500;">
+                            <span style="margin-right: 8px;">🔗</span>
+                            See all AI solutions I can build: <a href="https://ai-solutions.wiki/solutions/" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">ai-solutions.wiki/solutions</a>
+                        </p>
+                    </div>
+                    
+                    <p>Had a 2-hour workshop recording. Needed slides for a talk. Didn't want to spend my weekend on it.</p>
+                    
+                    <p>So I automated it.</p>
+                    
+                    <h2>The Setup</h2>
+                    <p>Whisper for transcription. Claude for summarizing and structuring. Python script to generate the markdown. Marp to turn it into actual slides.</p>
+                    
+                    <p>Total time from recording to finished deck: about 20 minutes. Most of that was the transcription.</p>
+                    
+                    <h2>What Actually Worked</h2>
+                    <p>The trick is giving Claude good instructions. Tell it exactly what format you want. How many slides. What to emphasize.</p>
+                    
+                    <p>Don't ask it to "make slides." Ask it to "extract 8-10 key points, each with a headline and 2-3 bullet points, suitable for a technical audience."</p>
+                    
+                    <h2>What Didn't Work</h2>
+                    <p>First attempt was garbage. Claude tried to include everything. 47 slides from a 2-hour workshop. Nobody wants that.</p>
+                    
+                    <p>Had to add constraints. "Maximum 12 slides. Skip the introductions. Focus on actionable takeaways."</p>
+                    
+                    <h2>The Result</h2>
+                    <p>Good enough to present. Not perfect, but 80% there. The remaining 20% took maybe 30 minutes of manual tweaking.</p>
+                    
+                    <p>Compare that to 4-6 hours of watching the recording and writing slides from scratch.</p>
+                    
+                    <p>Worth it? Yeah.</p>
                 </div>
                 
-                <p>Had a 2-hour workshop recording. Needed slides for a talk. Didn't want to spend my weekend on it.</p>
-                
-                <p>So I automated it.</p>
-                
-                <h2>The Setup</h2>
-                <p>Whisper for transcription. Claude for summarizing and structuring. Python script to generate the markdown. Marp to turn it into actual slides.</p>
-                
-                <p>Total time from recording to finished deck: about 20 minutes. Most of that was the transcription.</p>
-                
-                <h2>What Actually Worked</h2>
-                <p>The trick is giving Claude good instructions. Tell it exactly what format you want. How many slides. What to emphasize.</p>
-                
-                <p>Don't ask it to "make slides." Ask it to "extract 8-10 key points, each with a headline and 2-3 bullet points, suitable for a technical audience."</p>
-                
-                <h2>What Didn't Work</h2>
-                <p>First attempt was garbage. Claude tried to include everything. 47 slides from a 2-hour workshop. Nobody wants that.</p>
-                
-                <p>Had to add constraints. "Maximum 12 slides. Skip the introductions. Focus on actionable takeaways."</p>
-                
-                <h2>The Result</h2>
-                <p>Good enough to present. Not perfect, but 80% there. The remaining 20% took maybe 30 minutes of manual tweaking.</p>
-                
-                <p>Compare that to 4-6 hours of watching the recording and writing slides from scratch.</p>
-                
-                <p>Worth it? Yeah.</p>
-            </div>
-            
-            <!-- Author Bio -->
-            <div style="margin-top: 60px; padding: 32px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 16px; display: flex; gap: 24px; align-items: flex-start;">
-                <img src="../../assets/images/profile/headshot.png" alt="Samir Mohamed" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-                <div>
-                    <h3 style="margin: 0 0 4px 0; font-size: 1.1rem;">Samir Mohamed</h3>
-                    <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.95rem;">Cloud Consultant & AI Solutions Architect</p>
-                    <p style="margin: 0 0 16px 0; font-size: 0.95rem; line-height: 1.6;">I help companies build AI solutions that actually work. If you want to chat about your project, book a free intro call.</p>
-                    <a href="https://outlook.office.com/book/SamirMohamedConsulting@lindamohamed.com/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem; padding: 10px 20px;">Book Intro Call</a>
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border-light);">
+                    <a href="../blog.html">&larr; Back to Blog</a>
                 </div>
             </div>
             
-            <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border-light);">
-                <a href="../blog.html">&larr; Back to Blog</a>
-            </div>
+            <aside class="blog-sidebar">
+                <div class="author-card">
+                    <img src="../../assets/images/profile/headshot.png" alt="Samir Mohamed">
+                    <h3>Samir Mohamed</h3>
+                    <p class="role">Cloud Consultant & AI Solutions Architect</p>
+                    <p>I help companies build AI solutions that actually work. Let's chat about your project.</p>
+                    <a href="https://outlook.office.com/book/SamirMohamedConsulting@lindamohamed.com/" target="_blank" rel="noopener" class="btn btn-primary">Book Intro Call</a>
+                </div>
+            </aside>
         </div>
     </article>
 

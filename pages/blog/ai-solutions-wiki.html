@@ -19,14 +19,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <style>
-        .blog-post { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
-        .blog-post h1 { margin-bottom: 16px; }
+        .blog-layout { padding: 140px 0 80px; }
+        .blog-layout .container { display: grid; grid-template-columns: 1fr 300px; gap: 60px; max-width: 1200px; }
+        .blog-main h1 { margin-bottom: 16px; }
         .blog-meta { color: var(--text-muted); margin-bottom: 40px; }
         .blog-content p { margin-bottom: 20px; line-height: 1.8; }
         .blog-content h2 { margin-top: 40px; margin-bottom: 16px; }
         .blog-content ul { margin: 20px 0; padding-left: 24px; }
         .blog-content li { margin-bottom: 10px; list-style: disc; }
         .blog-content code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        .blog-sidebar { position: sticky; top: 100px; height: fit-content; }
+        .author-card { padding: 24px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 16px; text-align: center; }
+        .author-card img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
+        .author-card h3 { margin: 0 0 4px 0; font-size: 1.1rem; }
+        .author-card .role { margin: 0 0 16px 0; color: var(--text-muted); font-size: 0.9rem; }
+        .author-card p { margin: 0 0 20px 0; font-size: 0.9rem; line-height: 1.6; }
+        .author-card .btn { width: 100%; justify-content: center; }
+        @media (max-width: 900px) {
+            .blog-layout .container { grid-template-columns: 1fr; }
+            .blog-sidebar { position: static; margin-top: 40px; }
+        }
     </style>
 </head>
 <body>
@@ -41,64 +53,65 @@
         </div>
     </nav>
 
-    <article class="blog-post">
+    <article class="blog-layout">
         <div class="container">
-            <h1>Built an AI Wiki. Here's Why.</h1>
-            <p class="blog-meta">Jul 01, 2026 · 3 min read</p>
-            
-            <div class="blog-content">
-                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 1px solid #86efac; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px;">
-                    <p style="margin: 0; font-weight: 500;">
-                        <span style="margin-right: 8px;">🔗</span>
-                        Check it out: <a href="https://ai-solutions.wiki" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">ai-solutions.wiki</a>
-                    </p>
+            <div class="blog-main">
+                <h1>Built an AI Wiki. Here's Why.</h1>
+                <p class="blog-meta">Jul 01, 2026 · 3 min read</p>
+                
+                <div class="blog-content">
+                    <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 1px solid #86efac; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px;">
+                        <p style="margin: 0; font-weight: 500;">
+                            <span style="margin-right: 8px;">🔗</span>
+                            Check it out: <a href="https://ai-solutions.wiki" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 600;">ai-solutions.wiki</a>
+                        </p>
+                    </div>
+                    
+                    <p>Got tired of explaining the same stuff to every client. So I built a wiki.</p>
+                    
+                    <p>It's basically a collection of patterns I use when building production AI systems. RAG architectures, prompt engineering, model selection, deployment strategies. The boring stuff that actually matters.</p>
+                    
+                    <h2>The Problem</h2>
+                    <p>Every project starts the same way. Client wants to "use AI" but doesn't know what that means. You spend the first few weeks explaining basics instead of building things.</p>
+                    
+                    <p>Docs are scattered everywhere. AWS has theirs, OpenAI has theirs, nobody agrees on anything. Half the tutorials are outdated.</p>
+                    
+                    <h2>The Solution</h2>
+                    <p>One place with everything I actually use:</p>
+                    <ul>
+                        <li>Architecture patterns that work</li>
+                        <li>Cost estimates that are realistic</li>
+                        <li>Deployment scripts I've tested</li>
+                        <li>Things that broke and how to fix them</li>
+                    </ul>
+                    
+                    <h2>What's In It</h2>
+                    <p>Mostly practical stuff. How to set up Bedrock properly. When to use RAG vs fine-tuning. How to not blow your budget on embeddings.</p>
+                    
+                    <p>No fluff. No "AI will change everything" think pieces. Just code and configs.</p>
+                    
+                    <h2>Why Open Source</h2>
+                    <p>Because hoarding knowledge is dumb. Someone will figure it out anyway. Might as well save them time.</p>
+                    
+                    <p>Plus it forces me to write things down properly instead of keeping everything in my head.</p>
+                    
+                    <p>Check it out if you're building AI stuff. Or don't. I'm not your dad.</p>
                 </div>
                 
-                <p>Got tired of explaining the same stuff to every client. So I built a wiki.</p>
-                
-                <p>It's basically a collection of patterns I use when building production AI systems. RAG architectures, prompt engineering, model selection, deployment strategies. The boring stuff that actually matters.</p>
-                
-                <h2>The Problem</h2>
-                <p>Every project starts the same way. Client wants to "use AI" but doesn't know what that means. You spend the first few weeks explaining basics instead of building things.</p>
-                
-                <p>Docs are scattered everywhere. AWS has theirs, OpenAI has theirs, nobody agrees on anything. Half the tutorials are outdated.</p>
-                
-                <h2>The Solution</h2>
-                <p>One place with everything I actually use:</p>
-                <ul>
-                    <li>Architecture patterns that work</li>
-                    <li>Cost estimates that are realistic</li>
-                    <li>Deployment scripts I've tested</li>
-                    <li>Things that broke and how to fix them</li>
-                </ul>
-                
-                <h2>What's In It</h2>
-                <p>Mostly practical stuff. How to set up Bedrock properly. When to use RAG vs fine-tuning. How to not blow your budget on embeddings.</p>
-                
-                <p>No fluff. No "AI will change everything" think pieces. Just code and configs.</p>
-                
-                <h2>Why Open Source</h2>
-                <p>Because hoarding knowledge is dumb. Someone will figure it out anyway. Might as well save them time.</p>
-                
-                <p>Plus it forces me to write things down properly instead of keeping everything in my head.</p>
-                
-                <p>Check it out if you're building AI stuff. Or don't. I'm not your dad.</p>
-            </div>
-            
-            <!-- Author Bio -->
-            <div style="margin-top: 60px; padding: 32px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); border-radius: 16px; display: flex; gap: 24px; align-items: flex-start;">
-                <img src="../../assets/images/profile/headshot.png" alt="Samir Mohamed" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0;">
-                <div>
-                    <h3 style="margin: 0 0 4px 0; font-size: 1.1rem;">Samir Mohamed</h3>
-                    <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.95rem;">Cloud Consultant & AI Solutions Architect</p>
-                    <p style="margin: 0 0 16px 0; font-size: 0.95rem; line-height: 1.6;">I help companies build AI solutions that actually work. If you want to chat about your project, book a free intro call.</p>
-                    <a href="https://outlook.office.com/book/SamirMohamedConsulting@lindamohamed.com/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.9rem; padding: 10px 20px;">Book Intro Call</a>
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border-light);">
+                    <a href="../blog.html">&larr; Back to Blog</a>
                 </div>
             </div>
             
-            <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border-light);">
-                <a href="../blog.html">&larr; Back to Blog</a>
-            </div>
+            <aside class="blog-sidebar">
+                <div class="author-card">
+                    <img src="../../assets/images/profile/headshot.png" alt="Samir Mohamed">
+                    <h3>Samir Mohamed</h3>
+                    <p class="role">Cloud Consultant & AI Solutions Architect</p>
+                    <p>I help companies build AI solutions that actually work. Let's chat about your project.</p>
+                    <a href="https://outlook.office.com/book/SamirMohamedConsulting@lindamohamed.com/" target="_blank" rel="noopener" class="btn btn-primary">Book Intro Call</a>
+                </div>
+            </aside>
         </div>
     </article>
 
