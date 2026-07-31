@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4"/>
+      <stop offset="100%" style="stop-color:#dcfce7"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bg2)" width="400" height="200"/>
+  <!-- Gear 1 -->
+  <g transform="translate(100, 100)">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#16a34a" stroke-width="3"/>
+    <circle cx="0" cy="0" r="10" fill="#16a34a"/>
+    <rect x="-5" y="-40" width="10" height="15" rx="2" fill="#16a34a"/>
+    <rect x="-5" y="25" width="10" height="15" rx="2" fill="#16a34a"/>
+    <rect x="-40" y="-5" width="15" height="10" rx="2" fill="#16a34a"/>
+    <rect x="25" y="-5" width="15" height="10" rx="2" fill="#16a34a"/>
+  </g>
+  <!-- Arrow -->
+  <path d="M150 100 L180 100" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M175 95 L180 100 L175 105" stroke="#16a34a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Clock -->
+  <circle cx="220" cy="100" r="25" fill="none" stroke="#16a34a" stroke-width="3"/>
+  <line x1="220" y1="100" x2="220" y2="85" stroke="#16a34a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="220" y1="100" x2="232" y2="105" stroke="#16a34a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Arrow -->
+  <path d="M255 100 L285 100" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M280 95 L285 100 L280 105" stroke="#16a34a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Money/Invoice -->
+  <rect x="300" y="75" width="50" height="50" rx="4" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+  <text x="325" y="108" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#16a34a">$</text>
+</svg>
